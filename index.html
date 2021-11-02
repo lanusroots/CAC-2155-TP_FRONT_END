@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Mí primera web</title>
+</head>
+
+<body>
+    <!--============================================= -->
+    <!-- ENCABEZADO -->
+    <!--============================================= -->
+    <header class="container-fluid bg-primary d-flex justify-content-end">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos</p>
+        <div id="iconos-top">
+            <a href="https://www.facebook.com/Estructuras-Met%C3%A1licas-MF-673493752720421/?ref=py_c"
+                target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+        <div class="container">
+            <a class="navbar-brand text" href="index.html">
+                <span><img src="./img/logo_mf.png" alt="logo" width="160" height="140"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--============================================= -->
+    <!-- SLIDER DE IMAGENES-->
+    <!--============================================= -->
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/slide1.jpg" class="d-block w-100" alt="">
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!--============================================= -->
+    <!-- INTRODUCCION DE SERVICIOS-->
+    <!--============================================= -->
+
+
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+        id="intro">
+        <h1 class="p-3 fs-2 border-top border-3" id="presu">Podemos realizar su proyecto, solicite<span
+                class="text-primary"><a href="#seccion-contacto"> presupuesto</a></span></h1>
+        <p class="p-3  fs-4">
+            <span class="text-primary">Especialístas</span> en tinglados - techos - galpones, fabricación y montaje de
+            estructuras metálicas, herrería y zinguería en general
+        </p>
+    </section>
+
+    <!--============================================= -->
+    <!-- TIPOS DE SERVICIOS-->
+    <!--============================================= -->
+
+
+    <section class="w-100" id="servicios-fila-1">
+        <div class="row w-75 mx-auto" id="servicios-fila-1">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                <img src="./img/profesional.png" alt="desarrollo" width="180" height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Profesionalismo</h3>
+                    <p class="px-4">Contamos con profesionales de primer nivel para el proceso integral en el
+                        desarrollo de su proyecto.</p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+                <img src="./img/manten.png" alt="concepto" width="180" height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Construcción</h3>
+                    <p class="px-4">Realizamos proyectos ajustándonos a las necesidades específicas de cada uno de
+                        nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+                <img src="./img/personal.png" alt="comunicaciones" width="180" height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Personal</h3>
+                    <p class="px-4">Equipo altamente calificado para llevar adelante las tareas que intervienen en cada
+                        proyecto.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+                <img src="./img/seo.png" alt="seo" width="180" height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Tecnología</h3>
+                    <p class="px-4">Estamos capacitados en las últimas tecnologías de trabajo y estándares de seguridad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================================= -->
+    <!-- BACKGROUND IMAGEN FIXED-->
+    <!--============================================= -->
+
+    <div class="box bg-attachment"></div>
+
+    <!--============================================= -->
+    <!-- SECCION ACERCA DE NOSOTROS-->
+    <!--============================================= -->
+
+    <section class="mt-5">
+        <div class="container w-75 m-auto text-center" id="equipo">
+            <h1 class="mb-5 fs-2">Empresa familiar con <span class="text-primary">resultados Profesionales</span>.</h1>
+            <p class="fs-4 ">Siempre buscamos brindar servicios y asesoramiento profesional para llevarle
+                tranquilidad en cada uno de sus proyectos. Más de 30 años de experiencia en Planeamiento, Construcción y
+                Reparación,
+                avalan nuestra capacidad para dar solución a cualquier espacio o construcción.</p>
+        </div>
+
+        <div class="mt-5 mb-5 text-center">
+            <img class="img-fluid" id="img-equipo" src="./img/equipo.png" alt="equipo">
+        </div>
+
+        <div class="container w-75 m-auto text-center" id="equipo">
+            <p class="fs-4 ">Contamos con personal
+                capacitado y con
+                las normas de seguridad requeridas para que su obra se realice de la mejor forma posible. Estamos
+                convencidos que
+                nuestro mayor capital es la confianza que depositan en nosotros y es por ello que brindamos un trato
+                personalizado y
+                asesoramiento profesional .</p>
+        </div>
+
+        <div id="local" class="border-top border-2">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.076316348005!2d-58.39121918397932!3d-34.87942987964685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd547354f82c7%3A0x417e553b24b1f48b!2sLuis%20Rubinstein%202362%2C%20B1856BBD%20Glew%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1635504277048!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" SameSite=None;
+                    Secure></iframe>
+            </div>
+            <div>
+                <div class="wrapper-local">
+                    <h2>Estamos en Glew, provincia de Bs. As.</h2>
+                    <h2 class="text-primary mb-4" id="typewriter"></h2>
+                    <p class="fs-5 text-body">Elejimos la localidad de Glew para nuestra oficina hace ya más de 30 años.
+                        Estamos ubicados en Luis Rubinstein 2362 (B1856BBD) y nuestro teléfono de contacto es
+                        02224-433-643.</p>
+                    <section class="d-flex justify-content-start" id="numeros-local">
+                        <div>
+                            <p class="text-primary fs-5">100%</p>
+                            <p>Confiables</p>
+                        </div>
+                        <div>
+                            <p class="text-primary fs-5">7 a 17 hs</p>
+                            <p>Lunes a Sábados </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--============================================= -->
+    <!-- SECCION CONTACTOS-->
+    <!--============================================= -->
+
+    <section id="seccion-contacto" class="border-bottom border-secondary border-2">
+        <div id="bg-contactos">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#1b2a4e" fill-opacity="1"
+                    d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+
+        <!--=========================================== -->
+        <!-- CONTENEDOR DEL FORMULARIO -->
+        <!--=========================================== -->
+
+        <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+            <div class="text-center mb-4" id="titulo-formulario">
+                <div><img src="./img/support.png" alt="contacto" class="img-fluid ps-5"></div>
+                <h2>Contactanos</h2>
+                <p class="fs-5">Estamos aqui para hacer realidad tus proyectos</p>
+            </div>
+
+
+
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com" required>
+                    <div class="valid-feedback">Campo OK</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    <div class="valid-feedback">Campo OK</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+
+
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <textarea class="form-control" id="msj" rows="5" placeholder="Mensaje" required></textarea>
+                    <div class="valid-feedback">Campo OK</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Consulta</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!--Boton de ir hacia arriba-->
+
+    <div id="button-up">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+
+    <!--============================================= -->
+    <!--FOOTER-->
+    <!--============================================= -->
+
+
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">Estructuras Metálicas MF. &copy; Todos Los Derechos Reservados 2021</p>
+        <div id="iconos">
+            <a href="https://www.facebook.com/Estructuras-Met%C3%A1licas-MF-673493752720421/?ref=py_c"
+                target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

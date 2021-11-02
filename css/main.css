@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/*===================HEADER=========================*/
+
+#iconos-top i {
+  font-size: 22px;
+  padding: 0 8px;
+  color: #f3f3f3;
+  opacity: 0.5;
+}
+
+#iconos-top i:hover {
+  opacity: 1;
+}
+
+/*===================MENU==========================*/
+
+#menu a,
+button {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+#menu a {
+  text-align: center;
+}
+
+#presu a {
+  text-decoration: none;
+}
+
+/*===================SLIDER DE IMAGENES================*/
+
+.carousel-inner {
+  max-height: 39rem !important;
+}
+
+/*================SECCION GALERIA IMAGENES=========*/
+
+#galeria img {
+  height: 250px;
+}
+
+#galeria img:hover {
+  border: 5px solid #fff;
+  transition: 5ms;
+}
+
+/*===================BACKGROUND IMAGEN FIXED================*/
+
+.bg-attachment {
+  background-color: skyblue;
+  background-image: url("/img/img_fixed.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  background-attachment: fixed;
+}
+
+/*================SECCION NUESTRO EQUIPO IMAGEN=========*/
+
+#img-equipo {
+  max-height: 30rem !important;
+  width: 50%;
+  border-radius: 15px;
+}
+
+/*==========SECCION NUESTRO EQUIPO MAPA===============*/
+
+#local {
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+.wrapper-local {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+/*==============SECCION EQUIPO GLEW================*/
+
+#numeros-local {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#numeros-local div {
+  padding: 0 20px 0 0;
+  text-align: left;
+  height: 50px;
+}
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#numeros-local p {
+  margin: 0;
+}
+
+/*===============CONTACTOS BACKGROUND==============*/
+
+#bg-contactos {
+  position: relative;
+  top: -130px;
+}
+
+#seccion-contacto {
+  background-color: #1b2a4e;
+  min-height: 500px;
+  position: relative;
+}
+
+/*===============CONTACTOS FORMULARIO================*/
+
+#contenedor-formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fbfafa;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+#titulo-formulario {
+  color: #3f3f3f;
+}
+
+/*=================BOTON IR ARRIBA====================*/
+
+#button-up {
+  width: 60px;
+  height: 60px;
+  background: #46a2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  transform: scale(0);
+}
+
+#button-up:hover {
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/*=================FOOTER=========================*/
+
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+  opacity: 0.5;
+}
+
+#iconos i:hover {
+  opacity: 1;
+}
+
+/*===========MEDIA QUERIES PANTALLA ANCHA=============*/
+
+@media (max-width: 1200px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+/*==========MEDIA QUERIES PANTALLA SM==================*/
+
+@media (max-width: 768px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  #img-equipo {
+    max-height: 20rem !important;
+    width: 90%;
+  }
+
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  #local {
+    flex-wrap: wrap;
+  }
+
+  .embed-responsive-item {
+    width: 100%;
+    height: auto;
+  }
+
+  #bg-contactos {
+    top: -110px;
+  }
+}
+
+/*==========MEDIA QUERIES PANTALLA EXTRA-SM=============*/
+
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100% !important;
+  }
+
+  #servicios-fila-1 {
+    width: 100% !important;
+  }
+
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  #button-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
